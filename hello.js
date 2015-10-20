@@ -3,7 +3,7 @@ if(true){
     console.log(2);
 }
 
-console.log(process.pid);
+console.log(global.process.pid);
 
 setInterval(function(){
     console.log('hello');
