@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/index.css"/>
+</head>
+<body>
+<div id="clock"></div>
+<button id="btn">点我</button>
+f
+f
+f
+f
+f
+ff
+
+</body>
+<script>
+
+    document.getElementById('btn').addEventListener('click',function(){
+        setInterval(function(){
+            var xhr = new XMLHttpRequest;//创建运输兵
+            xhr.open('get','/clock');//告诉他如何过去，去哪里获取
+            xhr.onreadystatechange = function(){//数据取回来后怎么处理
+                document.getElementById('clock').innerHTML = this.responseText;
+            }
+            xhr.send();//出发了
+        },1000)
+        alert('时钟开始');
+    });
+</script>
+</html>
