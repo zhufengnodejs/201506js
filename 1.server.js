@@ -1,6 +1,6 @@
 /*
-* $('#btn').addEventListener('click',function(){
-*    alert('welcome');
+* $('#btn').addEventListener('click',function(event){
+*    alert(event);
 * }
 * );
 * */
