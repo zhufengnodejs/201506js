@@ -16,7 +16,7 @@ server.addListener('request',function(request,response){
     response.end();
 });
 //在当前服务器的414端口上进行监听
-server.listen(80,'0.0.0.0');
+server.listen(8080,'0.0.0.0');
 
 /**
   GET / HTTP/1.1
