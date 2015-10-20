@@ -16,7 +16,7 @@ server.addListener('request',function(request,response){
     response.end();
 });
 //在当前服务器的414端口上进行监听
-server.listen(414,'0.0.0.0');
+server.listen(80,'0.0.0.0');
 
 /**
   GET / HTTP/1.1
@@ -29,5 +29,5 @@ server.listen(414,'0.0.0.0');
  Connection: keep-alive
  Transfer-Encoding: chunked
 
-welcome浜茬埍鐨勫厛鐢? Connection #0 to host local
+
  **/
